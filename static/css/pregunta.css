@@ -1,0 +1,48 @@
+/*Navegacion.*/
+.navbar{
+    background-color: #20274c !important;
+}
+
+.selected{
+    background-color:#28316d;
+    border-radius: 5px;
+}
+/*Fondo de color del body.*/
+html, body{
+    background-color: #28316d;
+}
+
+/*Formulario*/
+.form{
+    display: flex;
+    margin-top: 30px;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.txt{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    background-color:#20274c;
+    color:white;
+    width: 600px;
+    margin-bottom: 15px;
+}
+.txt::placeholder{
+    color:gainsboro;
+}
+
+.btn{
+    color:white;
+    width: 300px;
+}
+
+/*Footer*/
+.foot{
+    background-color: #20274c;
+    padding: 10px;
+    position: fixed;
+    bottom:0;
+}

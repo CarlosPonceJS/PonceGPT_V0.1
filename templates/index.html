@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ponceGPT</title>
+    <!-- Bootstrap.-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!--Icono-->
+    <link rel="icon" href="{{ url_for('static', filename='img/Icono.png') }}" type="image/x-icon">
+
+  </head>
+  <body>
+    <!--Navegacion.-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/Icono Transparente.png') }}" alt="" height="40px" width="40px" > <span class="text-light">ponceGPT</span></a>
+        <button class="navbar-toggler text-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="{{ url_for('preguntas') }}">Insertar pregunta</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="{{ url_for('respuestas') }}">Insertar respuesta<a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active text-light selected" href="{{ url_for('index') }}">ponceGPT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Area de Mensajes.-->
+     <div class="container text-light msg" id="mensajes">
+      <div class="imgLogo">
+        <img src="{{ url_for('static', filename='/img/Logo Transparente.png') }}" alt="" id="imgLogo"> 
+    </div>
+      <div id="areaMensajes"  class="text-left">
+     </div>
+    </div> 
+
+    <div class="container text-center d-flex justify-content-center group">
+      <input type="text" id="chatBox" placeholder="Mensaje a ponceGPT" oninput="colorBoton()">
+      <button type="button" class="btn btn-outline-success" id="btnPreguntar"><img src="{{ url_for('static', filename='img/btnEnviar.png') }}" height="20px" width="20px" alt=""></button>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="container-fluid text-center text-light d-flex justify-content-center align-items-center p-4 mt-4 foot">
+         ponceGPT &copy; 2023. Todos los derechos reservados mi niño
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Mi archivo js.-->
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  </body>
+</html>

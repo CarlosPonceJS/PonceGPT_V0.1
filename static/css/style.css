@@ -1,0 +1,84 @@
+/*Navegacion.*/
+.navbar{
+    background-color: #20274c !important;
+}
+
+.selected{
+    background-color:#28316d;
+    border-radius: 5px;
+}
+
+.msg {
+    height: 450px;
+    overflow-y: auto;
+    width: 900px;
+    background-color:#28316d;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.imgLogo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#areaMensajes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left !important;
+    justify-content: start;
+    
+}
+/*Fondo de color del body.*/
+html, body{
+    background-color: #28316d;
+}
+/*Caja de texto.*/
+
+.group {
+    position: relative !important;
+}
+
+#chatBox {
+    display:flex;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    width: 900px;
+    background-color: #20274c;
+    color: white;
+}
+#chatBox::placeholder{
+    color:rgb(213, 211, 211)
+}
+
+.btn{
+    margin-top: 8px;
+    position: absolute;
+    margin-left: 860px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Footer*/
+.foot{
+    background-color: #20274c;
+    padding: 10px;
+    position: fixed;
+    bottom:0;
+}
